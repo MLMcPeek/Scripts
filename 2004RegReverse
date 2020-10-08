@@ -1,0 +1,5 @@
+REG ADD HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon /V DisableCAD /D 0 /F
+REG ADD HKLM\SOFTWARE\Microsoft\Windows\CurrentVersion\Policies\System /V dontdisplaylastusername /D 0 /F
+REG ADD HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon /V AutoAdminLogon /D 0 /F
+REG ADD HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon /V DefaultUserName /D /F
+REG DELETE HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion\Winlogon /V DefaultPassword /F
