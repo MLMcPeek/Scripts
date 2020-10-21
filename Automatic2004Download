@@ -1,0 +1,3 @@
+Install-PackageProvider -Name "Nuget" -RequiredVersion '2.8.5.201' -Force
+Install-Module -Name PSWindowsUpdate -Force
+Get-WindowsUpdate -KBArticleID KB4550936 -Install -AcceptAll
