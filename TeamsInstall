@@ -1,0 +1,2 @@
+if not exist %userprofile%\appdata\local\Microsoft\Teams\Update.exe 
+"%programfiles(x86)%\Teams Installer\Teams.exe"
