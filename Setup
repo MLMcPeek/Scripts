@@ -2,8 +2,10 @@ $setup = "C:\ESD\Windows\setup.exe"
 
 if (Test-Path -path $setup)
 {
+ Stop-Process "C:\Temp\MediaCreationTool20H2.exe"
  Start-Process "C:\ESD\Windows\setup.exe" -ArgumentList "/Auto Upgrade /Eula Accept"
 } else {
   do {Start-Sleep -Seconds 300} until (Test-Path -path $setup)
+  Stop-Process "C:\Temp\MediaCreationTool20H2.exe"
   Start-Process "C:\ESD\Windows\setup.exe" -ArgumentList "/Auto Upgrade /Eula Accept"
 }
